@@ -34,8 +34,7 @@ options.add_experimental_option("prefs", {
     "download.directory_upgrade": True,
     "safebrowsing.enabled": True
 })
-# Insert the path to your chromedriver
-
+# Insert the path to your chromedriver (In this case I had put the driver in a folder called correcter within my project folder Python Automation)
 driver_path = os.path.abspath("../Python Automation/correcter/chromedriver")
 options.add_argument(f"executable_path={driver_path}")
 
@@ -45,11 +44,11 @@ load_dotenv()
 gmail = Gmail()
 
 
+# The URLS to the CSV download page and the Login page
 csv_download_url = "https://global.americanexpress.com/myca/intl/download/canlac/download.do?request_type=&Face=en_CA&sorted_index=0"
 login_url = "https://www.americanexpress.com/en-ca/account/login?inav=ca_utility_login"
 
 # Retrieves sensitive information in this case the Username and Password for my AMEX Account from a .env file 
-
 Username = os.getenv('USER_NAME')
 Password = os.getenv('PASS')
 

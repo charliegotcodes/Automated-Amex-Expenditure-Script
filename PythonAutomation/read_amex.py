@@ -36,7 +36,7 @@ options.add_experimental_option("prefs", {
 })
 # Insert the path to your chromedriver
 
-driver_path = os.path.abspath("../Python Automation/correcter/chromedriver")
+driver_path = os.path.abspath("../PythonAutomation/correcter/chromedriver")
 options.add_argument(f"executable_path={driver_path}")
 
 # Initialize Chrome WebDriver

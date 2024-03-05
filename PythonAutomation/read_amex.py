@@ -29,7 +29,7 @@ options.add_argument('log-level=3')
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_experimental_option("detach", True)
 options.add_experimental_option("prefs", {
-    "download.default_directory": "../Python Automation/CSV_Files",
+    "download.default_directory": "../PythonAutomation/CSV_Files",
     "download.prompt_for_download": False,  # Enable download prompt (optional)
     "download.directory_upgrade": True,
     "safebrowsing.enabled": True

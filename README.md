@@ -1,11 +1,31 @@
-# Automated-Amex-Expenditure-Script
+# Automated Amex Statement Spending Report
 
-This scripts job is to automatically produce a report of a pie chart that displays your current spending on your amex account with two categories of how much has been paid and how much is left to be paid. 
+his script automates the process of generating a spending report for your American Express account. It produces a pie chart that visually displays:
 
-It accomplishes this by utilizing the gmail API to connect to your gmail and sift and find the most recent email of your new statement being available. After finding that email it navigates to the page to the download your current data as a CSV file. 
+* The amount spent that has already been paid.
+* The remaining balance that is left to be paid.
+* The script connects to your Gmail account, retrieves the latest statement notification, downloads the transaction data, processes it, and creates the report.
 
-It then performs file handling by moving the downloaded file from the original download file to the destination directory and saving the file by the date of the statement that was scraped from the Amex Website during download. 
+__________________________________________________________________________________________________________________
 
-After moving the .CSV file we utilize the pandas dataframe to work with the data and extract the amount that has been spent and the amount that has been paid thus far on the statement. 
+# Features 
 
-Then utilizing the matplotlib library we construct a pie chart and display our current spending and how much is left to be paid.
+* Automatic Email Retrieval
+  1. Utilizing Gmail API to access your inbox and locate your latest Amex statement email.
+    
+* CSV File Handling
+  1. Downloads the latest CSV file from the Amex website
+  2. Saves file with the statement date for easy reference
+  3. Moves the file to a storage of all previous statements
+     
+* Data Analysis
+  1. Process the CSV of the statement using Pandas
+  2. Total Amount spent on the statement
+  3. Total Amount paid so Far
+ 
+* Visual Report
+  1. Pie chart generation using Matplotlib
+  2. Displays two categories of: Paid Amount, Remaining Balance
+
+__________________________________________________________________________________________________________________
+

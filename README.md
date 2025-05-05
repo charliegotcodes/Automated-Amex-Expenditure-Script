@@ -1,6 +1,6 @@
 # Automated Amex Statement Spending Report
 
-his script automates the process of generating a spending report for your American Express account. It produces a pie chart that visually displays:
+This script automates the process of generating a spending report for your American Express account. It produces a pie chart that visually displays:
 
 * The amount spent that has already been paid.
 * The remaining balance that is left to be paid.
